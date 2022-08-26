@@ -4,9 +4,20 @@ body {
     font-size: 1.2em;
     line-height: 1.1;
     font-weight: 400;
-    max-width: 768px;
 }
-
+h1 {
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+}
+form {
+    max-width: 768px;
+    border: 2px solid red;
+    margin: 0 auto;
+}
 fieldset,
 input,
 textarea,
@@ -14,16 +25,42 @@ select,
 button {
     border: 0;
     resize: none;
+    border-radius: 5px;
 }
-
 .headings {
     color: #2d3945;
+    font-size: 1rem;
+    font-weight: bold;
 }
-
+input,
+select {
+    padding: .7rem 0;
+}
 input,
 textarea,
 select {
     background: #eff0f1;
+    font-size: .75rem;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+input::placeholder {
+    font-size: .75rem;
+    color: #aeb3b7;
+    text-align: right;
+}
+select:nth-child(2) {
+    color: #5a6c7e;
+}
+fieldset label,
+fieldset p {
+    color: #5a6c7e;
+    font-size: .75rem;
+    margin: .2rem 0;
+}
+section p,
+footer p {
+    color: #b9bec1;
 }
 
 
@@ -31,8 +68,53 @@ select {
 .container {
     display: flex;
     flex-direction: column;
+    margin: 1rem 0;
 }
 .newsletter {
     flex-direction: row;
 }
 
+/* Header */
+header {
+    width: 100%;
+    padding: 1.5rem 0;
+    background: #2d3945;
+}
+.signup {
+    width: 100%;
+    text-align: center;
+}
+.signup p {
+    font-size: .75em;
+}
+
+/* Contact */
+input[name="zip"] {
+    width: 50%;
+}
+
+/* Newsletter */
+.newsletter {
+    margin: .75rem 0;
+}
+
+.newsletter-field p {
+    margin-top: 1rem;
+}
+
+textarea {
+    height: 6rem;
+}
+
+button {
+    height: 4rem;
+    color: white;
+    font-weight: bold;
+    background: #4ebbb5;
+}
+
+/* Footer */
+footer p {
+    font-size: .75rem;
+    text-align: center;
+}

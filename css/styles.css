@@ -43,7 +43,7 @@ button {
 }
 input,
 select {
-    padding: .7rem 0;
+    padding: 1rem 0;
 }
 input,
 textarea,
@@ -131,6 +131,14 @@ button {
     color: white;
     font-weight: bold;
     background: #4ebbb5;
+    transition: .2s ease;
+}
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    background: #2d3945;
 }
 
 /* Footer */
@@ -141,3 +149,6 @@ footer p {
 }
 
 /* Media Query */
+@media screen and (min-width: 768px) {
+
+}

@@ -17,6 +17,16 @@ form {
     max-width: 768px;
     margin: 0 auto;
 }
+.border-btm {
+    width: 90%;
+    margin: 2rem auto .2rem auto;
+    border-bottom: 5px solid #2d3945;
+}
+.border-top {
+    width: 90%;
+    margin: 0 auto 1.5rem auto;
+    border-top: 3px solid #2d3945;
+}
 fieldset,
 input,
 textarea,
@@ -28,7 +38,7 @@ button {
 }
 .headings {
     color: #2d3945;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 input,
@@ -85,7 +95,9 @@ header {
 }
 .signup {
     width: 100%;
+    max-width: 768px;
     text-align: center;
+    margin: 1.5rem auto 0 auto;
 }
 .signup p {
     font-size: .75em;
@@ -125,6 +137,7 @@ button {
 footer p {
     font-size: .75rem;
     text-align: center;
+    margin: 0 0 10rem 0;
 }
 
 /* Media Query */

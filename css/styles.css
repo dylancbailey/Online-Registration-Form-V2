@@ -1,0 +1,38 @@
+/* Basic Styling */
+body {
+    font-family: "Merriweather", sans-serif;
+    font-size: 1.2em;
+    line-height: 1.1;
+    font-weight: 400;
+    max-width: 768px;
+}
+
+fieldset,
+input,
+textarea,
+select,
+button {
+    border: 0;
+    resize: none;
+}
+
+.headings {
+    color: #2d3945;
+}
+
+input,
+textarea,
+select {
+    background: #eff0f1;
+}
+
+
+/* Flex */
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.newsletter {
+    flex-direction: row;
+}
+

@@ -156,6 +156,6 @@ footer p {
         flex: 1;
     }
     input[name="zip"] {
-        flex: .5;
+        flex: .23;
     }
 }

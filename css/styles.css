@@ -150,5 +150,25 @@ footer p {
 
 /* Media Query */
 @media screen and (min-width: 768px) {
+    .border-btm,
+    .border-top {
+        width: 96%;
+    }
 
+    .contact {
+        flex-direction: row;
+    }
+    .contact label {
+        flex-basis: 9rem;
+        flex-grow: 0;
+        flex-shrink: 0;
+        align-self: center;
+    }
+    .contact input,
+    .contact select {
+        flex: 1;
+    }
+    input[name="zip"] {
+        flex: .5;
+    }
 }

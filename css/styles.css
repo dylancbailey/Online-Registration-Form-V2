@@ -75,8 +75,6 @@ section p,
 footer p {
     color: #b9bec1;
 }
-
-
 /* Flex */
 .container {
     display: flex;
@@ -86,7 +84,6 @@ footer p {
 .newsletter {
     flex-direction: row;
 }
-
 /* Header */
 header {
     width: 100%;
@@ -102,30 +99,24 @@ header {
 .signup p {
     font-size: .75em;
 }
-
 /* Contact */
 .contact-field label {
     margin-bottom: .5rem;
 }
-
 input[name="zip"] {
     width: 50%;
 }
-
 /* Newsletter */
 .newsletter-field p:nth-child(n+3) {
     margin-top: 1.8rem; 
 }
-
 input[type="checkbox"],
 input[type="radio"] {
     margin-right: .7rem;
 }
-
 textarea {
     height: 6rem;
 }
-
 button {
     height: 4rem;
     color: white;
@@ -136,25 +127,21 @@ button {
 button:hover {
     cursor: pointer;
 }
-
 button:active {
     background: #2d3945;
 }
-
 /* Footer */
 footer p {
     font-size: .75rem;
     text-align: center;
     margin: 0 0 10rem 0;
 }
-
 /* Media Query */
 @media screen and (min-width: 768px) {
     .border-btm,
     .border-top {
         width: 96%;
     }
-
     .contact {
         flex-direction: row;
     }

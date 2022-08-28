@@ -75,6 +75,7 @@ section p,
 footer p {
     color: #b9bec1;
 }
+
 /* Flex */
 .container {
     display: flex;

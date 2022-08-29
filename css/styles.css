@@ -155,12 +155,10 @@ textarea {
 }
 button {
     height: 4rem;
-    transition: .2s ease;
+    transition: background .3s ease;
 }
 button:hover {
     cursor: pointer;
-}
-button:active {
     background: #2d3945;
 }
 

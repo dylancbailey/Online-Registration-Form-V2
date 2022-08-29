@@ -118,14 +118,15 @@ textarea,
 select {
     padding-right: 10px;
     padding-left: 10px;
-    outline-color: transparent;
-    transition: background .3s ease-out, outline-color .3s ease-out;
+    outline: none;
+    border: 2px solid white;
+    transition: background .4s ease, border .4s ease;
 
 }
 input:focus,
 textarea:focus,
 select:focus {
-    outline-color: #748da6;
+    border: 2px solid #748da6;
     background: #fcfbfb;
 }
 

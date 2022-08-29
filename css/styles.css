@@ -1,4 +1,6 @@
-/* Basic Styling */
+/*************************
+         Global
+ *************************/
 body {
     font-family: "Merriweather", sans-serif;
     font-size: 1.2em;
@@ -8,14 +10,13 @@ body {
 h1 {
     font-size: 1.1rem;
     font-weight: 900;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 0 auto;
     color: white;
 }
-form {
-    max-width: 768px;
-    margin: 0 auto;
+header {
+    background: #966B7C;
+}
+.signup p {
+    font-size: .75em;
 }
 .border-btm {
     width: 90%;
@@ -42,23 +43,12 @@ button {
     font-weight: bold;
 }
 input,
-select {
-    padding: 1rem 0;
-}
-input,
 textarea,
 select {
     background: #eff0f1;
     font-size: .75rem;
-    padding-right: 10px;
-    padding-left: 10px;
 }
-input:focus,
-textarea:focus,
-select:focus {
-    outline-color: #748da6;
-}
-input::placeholder {
+.required::placeholder {
     font-size: .75rem;
     color: #aeb3b7;
     text-align: right;
@@ -71,12 +61,19 @@ fieldset p {
     color: #5a6c7e;
     font-size: .75rem;
 }
+button {
+    color: white;
+    font-weight: bold;
+    background: #4ebbb5;
+}
 section p,
 footer p {
     color: #b9bec1;
 }
 
-/* Flex */
+/*************************
+         Flexbox
+ *************************/
 .container {
     display: flex;
     flex-direction: column;
@@ -85,11 +82,18 @@ footer p {
 .newsletter {
     flex-direction: row;
 }
-/* Header */
+
+/*************************
+         Header
+ *************************/
 header {
     width: 100%;
     padding: 1.5rem 0;
-    background: #2d3945;
+}
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
 }
 .signup {
     width: 100%;
@@ -97,17 +101,48 @@ header {
     text-align: center;
     margin: 1.5rem auto 0 auto;
 }
-.signup p {
-    font-size: .75em;
+
+/*************************
+         Form
+ *************************/
+form {
+    max-width: 768px;
+    margin: 0 auto;
 }
-/* Contact */
+input,
+select {
+    padding: 1rem 0;
+}
+input,
+textarea,
+select {
+    padding-right: 10px;
+    padding-left: 10px;
+    outline-color: transparent;
+    transition: background .1s ease-out, outline-color .1s ease-out;
+
+}
+input:focus,
+textarea:focus,
+select:focus {
+    transition: background .3s ease-in, outline-color .3s ease-in;
+    outline-color: #748da6;
+    background: #fcfbfb;
+}
+
+/*************************
+         Contact
+ *************************/
 .contact-field label {
     margin-bottom: .5rem;
 }
 input[name="zip"] {
     width: 50%;
 }
-/* Newsletter */
+
+/*************************
+         Newsletter 
+ *************************/
 .newsletter-field p:nth-child(n+3) {
     margin-top: 1.8rem; 
 }
@@ -117,12 +152,10 @@ input[type="radio"] {
 }
 textarea {
     height: 6rem;
+    margin-bottom: 1rem;
 }
 button {
     height: 4rem;
-    color: white;
-    font-weight: bold;
-    background: #4ebbb5;
     transition: .2s ease;
 }
 button:hover {
@@ -131,13 +164,22 @@ button:hover {
 button:active {
     background: #2d3945;
 }
-/* Footer */
+
+/*************************
+         Footer 
+ *************************/
 footer p {
     font-size: .75rem;
     text-align: center;
     margin: 0 0 10rem 0;
 }
-/* Media Query */
+footer p::before {
+    content: "\00a9";
+}
+
+/*************************
+         Media Query 
+ *************************/
 @media screen and (min-width: 768px) {
     .border-btm,
     .border-top {

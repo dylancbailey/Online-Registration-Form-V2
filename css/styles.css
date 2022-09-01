@@ -108,6 +108,7 @@ h1 {
 form {
     max-width: 768px;
     margin: 0 auto;
+    padding-bottom: 1rem;
 }
 input,
 select {
@@ -150,12 +151,20 @@ input[type="checkbox"],
 input[type="radio"] {
     margin-right: .7rem;
 }
+.comments {
+    margin: 1rem 0;
+}
 textarea {
     height: 6rem;
-    margin-bottom: 1rem;
+}
+.button-container {
+    margin: 0;
+    max-width: 768px;
 }
 button {
+    width: 90%;
     height: 4rem;
+    margin: 0 auto;
     transition: background .3s ease;
 }
 button:hover {
@@ -169,7 +178,7 @@ button:hover {
 footer p {
     font-size: .75rem;
     text-align: center;
-    margin: 1rem 0 10rem 0;
+    margin: 1.3rem 0 10rem 0;
 }
 footer p::before {
     content: "\00a9";
@@ -178,6 +187,12 @@ footer p::before {
 /*************************
          Media Query 
  *************************/
+@media screen and (min-width: 500px) {
+    button {
+        width: 94%;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .border-btm,
     .border-top {
@@ -204,5 +219,8 @@ footer p::before {
     }
     input[name="zip"] {
         flex: .23;
+    }
+    button {
+        width: 96%;
     }
 }
